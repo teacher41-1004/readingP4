@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UK Culture: Traditional clothes</title>
+<style>
+:root{--f:clamp(13px,.5vw + 7px,17px);--navy:#012169;--red:#C8102E;--ink:#0b1f4d}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;overflow:hidden;color:var(--ink);font:var(--f)/1.45 "Trebuchet MS","Segoe UI",system-ui,sans-serif;background:radial-gradient(circle at 20% 10%,#1d3f99,#012169 60%,#0a1440)}
+#bg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.dc{position:absolute;border-radius:3px;overflow:hidden;box-shadow:0 3px 8px #0006;opacity:.9}.dc svg{width:100%;display:block}
+header,main{position:relative;z-index:1}
+header{height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;background:#0a1a55;border-bottom:4px solid var(--red);box-shadow:0 4px 0 #fff}
+h1{margin:0;color:#fff;font-size:1.45em;display:flex;align-items:center;gap:10px}
+.k{background:var(--red);border-radius:8px;padding:0 10px;font-size:.8em;letter-spacing:2px}
+.tm{display:flex;align-items:center;gap:8px}
+#tm{background:#fff;color:var(--navy);font-weight:800;font-variant-numeric:tabular-nums;border-radius:10px;padding:3px 12px;min-width:76px;text-align:center}
+.hb{border:0;border-radius:9px;font:inherit;font-weight:700;padding:5px 13px;cursor:pointer;box-shadow:0 2px 0 #0004}
+.hb:active{transform:translateY(2px);box-shadow:none}
+#st{background:var(--red);color:#fff}#ps{background:#fff;color:var(--navy)}
+main{height:calc(100vh - 62px);display:grid;grid-template-columns:2fr 1fr;gap:14px;padding:14px 16px 12px}
+.pn{min-height:0;overflow-y:auto;border-radius:16px;padding:14px 20px;background:#fffc;box-shadow:0 4px 16px #0005}
+#rd{border:3px solid var(--red)}
+#qp{border:3px solid var(--navy);display:flex;flex-direction:column;background:#fffc}
+.intro{margin:0 0 12px;padding:8px 14px;background:#e9eeff;border-left:5px solid var(--red);border-radius:8px;font-weight:600;color:var(--navy)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.cl+.cl{border-left:2px solid #c8102e44;padding-left:28px}
+.cols p{margin:0 0 .75em;text-align:left}
+.s{border-radius:4px;transition:background .3s}
+.s.hl{background:#ffe066;box-shadow:0 0 0 3px #ffe066}
+.qi{font-weight:700;color:var(--red);margin-bottom:8px}
+.qt{font-weight:700;margin:0 0 10px;color:var(--navy)}
+.tfr{display:flex;gap:10px;margin-bottom:8px}
+.tf{flex:1;font:inherit;font-weight:800;color:var(--navy);background:#fff;border:2.5px solid var(--navy);border-radius:10px;padding:7px;cursor:pointer}
+.tf:hover:not(:disabled){background:#e6ecff}
+.tf.sel{background:#cfdcff;border-color:var(--navy)}
+.tf.good{background:#dff0d4;border-color:#3f8a33;color:#23551b}
+.tf.bad{background:#fbdede;border-color:#c0392b;color:#7a1d17}
+.tf:disabled{cursor:default}
+textarea{width:100%;resize:none;font:inherit;border:2px solid #7f95d6;border-radius:10px;padding:7px 9px;background:#fff;color:inherit}
+textarea:focus{outline:none;border-color:var(--navy)}
+.act{display:flex;gap:8px;margin:8px 0}
+.bt{flex:1;border:0;border-radius:10px;padding:8px;font:inherit;font-weight:800;color:#fff;cursor:pointer;box-shadow:0 3px 0 #0004}
+.bt:active:not(:disabled){transform:translateY(3px);box-shadow:none}
+.ck,.pv,.nx{background:var(--navy)}.sh{background:var(--red)}
+.bt:disabled{background:#c9d1ea;box-shadow:none;cursor:not-allowed}
+.ab{border-radius:12px;padding:8px 11px;margin-bottom:8px;border:2px solid}
+.ab.g{background:#e6f6df;border-color:#3f8a33}.ab.r{background:#fdeaea;border-color:#c0392b}.ab.n{background:#eef2ff;border-color:var(--navy)}
+.nav{margin-top:auto;display:flex;gap:8px;align-items:center;padding-top:6px}
+.dots{display:flex;gap:5px;flex:1;justify-content:center}
+.dots i{width:10px;height:10px;border-radius:50%;background:#fff;border:2px solid #7f95d6}
+.dots i.a{background:var(--navy);border-color:var(--navy)}.dots i.d{background:var(--red);border-color:var(--red)}
+</style></head><body>
+<svg style="position:absolute;width:0;height:0"><defs><clipPath id="ct"><path d="M30,15h30v15zv15h-30zh-30v-15zv-15h30z"/></clipPath>
+<g id="uj"><path d="M0,0v30h60v-30z" fill="#012169"/><path d="M0,0L60,30M60,0L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0L60,30M60,0L0,30" clip-path="url(#ct)" stroke="#C8102E" stroke-width="4"/><path d="M30,0v30M0,15h60" stroke="#fff" stroke-width="10"/><path d="M30,0v30M0,15h60" stroke="#C8102E" stroke-width="6"/></g></defs></svg>
+<div id="bg"></div>
+<header><h1><span class="k">UK CULTURE</span>Traditional clothes</h1>
+<div class="tm"><span id="tm">00:00</span><button class="hb" id="st">Start</button><button class="hb" id="ps">Pause</button></div></header>
+<main><section class="pn" id="rd"><p class="intro" id="intro"></p><div class="cols" id="cols"></div></section><section class="pn" id="qp"></section></main>
+<script>
+const P=[
+"In many countries there are traditional clothes that people wear for special occasions, such as national holidays and popular folk festivals. The United Kingdom includes four different countries - England, Wales, Scotland and Northern Ireland - and each country has its own history and special customs.",
+"One of the most traditional items of clothing in the UK is the kilt. There are many versions, but the most famous ones are the kilts that men wear in Scotland on special occasions. Traditional Scottish kilts are made with five metres of tartan, which is a fabric with vertical and horizontal lines in different colours. Many Scottish families have a tartan with their own special colours. At the front of their kilts, Scottish men usually wear a small bag called a sporran to carry money and personal items. Scottish women wear a tartan skirt with a blouse and a tartan cloth on their shoulders called a shawl. They may also wear tartan dresses.",
+"In Wales, some women wear a traditional costume on important occasions, such as St David's Day, on 1st March. On those special days, many women wear a long dress with a red shawl over their shoulders. However, the most unusual part of the costume is a tall, black hat. It looks like the very formal hats that men wore in the past. Welsh men haven't got a special costume for festivals, but they often wear old-fashioned trousers called breeches.",
+"England hasn't got a national folk costume, but some people wear special clothes for traditional events, such as Morris dancing shows. Morris dancers can wear many different things, but they typically have white or black trousers or breeches. Some people also wear hats and short jackets called waistcoats, with long, colourful ribbons that move when they dance. It's quite spectacular!",
+"In Northern Ireland, traditional Irish step dancing is very popular, and the dancers usually wear special clothes for their performances. Women and girls typically wear a short dress so they can kick up their feet quickly and easily. They sometimes wear tights on their legs, especially when the weather is cold. Men and boys usually wear simple clothes to step dance, such as black trousers, a shirt and a colourful jacket."];
+const Q=[
+{q:"The kilt is traditionally a clothing item for Scottish men.",k:"T",ev:["One of the most traditional items of clothing in the UK is the kilt","the kilts that men wear in Scotland"]},
+{q:"A sporran is a cloth that woman wear on their shoulders.",k:"F",fix:"A sporran is a small bag that Scottish men wear at the front of their kilts to carry money and personal items.",ev:["a small bag called a sporran","a tartan cloth on their shoulders called a shawl"]},
+{q:"Welsh men and women wear tall black hats for special events.",k:"F",fix:"Some Welsh women wear a tall black hat for special events, but Welsh men haven't got a special costume.",ev:["In Wales, some women wear","the most unusual part of the costume is a tall, black hat","Welsh men haven't got a special costume"]},
+{q:"Breeches are trousers that some men wear to festivals.",k:"T",ev:["they often wear old-fashioned trousers called breeches","white or black trousers or breeches"]},
+{q:"There's an official costume for all Morris dancers in England.",k:"F",fix:"England hasn't got a national folk costume, and Morris dancers can wear many different things.",ev:["England hasn't got a national folk costume","Morris dancers can wear many different things"]},
+{q:"Irish women must wear tights when they do step dancing.",k:"F",fix:"Irish women sometimes wear tights when they do step dancing, especially when the weather is cold.",ev:["They sometimes wear tights on their legs"]}];
+const $=s=>document.querySelector(s),N=Q.length;
+let cur=0,sec=0,tm=null;const S=Q.map(()=>({c:"",t:"",k:0,s:0}));
+const sp=p=>p.split(/(?<=[.!?])\s+/).map(s=>`<span class="s">${s}</span>`).join(" ");
+$("#intro").innerHTML=sp(P[0]);
+$("#cols").innerHTML=[[1,2],[3,4]].map(g=>`<div class="cl">${g.map(i=>"<p>"+sp(P[i])+"</p>").join("")}</div>`).join("");
+function hl(){document.querySelectorAll(".hl").forEach(e=>e.classList.remove("hl"));if(!S[cur].s)return;
+ Q[cur].ev.forEach(v=>document.querySelectorAll(".s").forEach(e=>{if(e.textContent.includes(v))e.classList.add("hl")}))}
+function render(){const q=Q[cur],s=S[cur],lk=s.k;
+ const b=v=>`<button class="tf ${s.c==v?(lk?(v==q.k?"good":"bad"):"sel"):""}" data-v="${v}" ${lk?"disabled":""}>${v=="T"?"✔ True":"✘ False"}</button>`;
+ let ab="";if(lk){const ok=s.c&&s.c==q.k;ab=`<div class="ab ${s.c?(ok?"g":"r"):"n"}"><b>${s.c?(ok?"✅ Correct!":"❌ Not quite."):"Answer"}</b><br>${q.k=="T"?"<b>True.</b>":`<b>False.</b><br><b>Correct sentence:</b> ${q.fix}`}</div>`}
+ $("#qp").innerHTML=`<div class="qi">Are the sentences true or false? Correct the false sentences.</div><p class="qt">${cur+1}. ${q.q}</p><div class="tfr">${b("T")}${b("F")}</div>${s.c=="F"?`<textarea id="ta" rows="2" placeholder="Write the correct sentence here..."></textarea>`:""}<div class="act"><button class="bt ck" id="ck" ${lk?"disabled":""}>Check Answer</button><button class="bt sh" id="sh">Show in text</button></div>${ab}<div class="nav"><button class="bt pv" id="pv" ${cur?"":"disabled"}>◀ Previous</button><div class="dots">${S.map((x,i)=>`<i class="${i==cur?"a":x.k?"d":""}"></i>`).join("")}</div><button class="bt nx" id="nx" ${cur==N-1?"disabled":""}>Next ▶</button></div>`;
+ const ta=$("#ta");if(ta)ta.value=s.t;hl()}
+$("#qp").addEventListener("input",e=>{if(e.target.id=="ta")S[cur].t=e.target.value});
+$("#qp").addEventListener("click",e=>{const b=e.target.closest("button");if(!b||b.disabled)return;
+ if(b.classList.contains("tf"))S[cur].c=b.dataset.v;else if(b.id=="ck")S[cur].k=1;else if(b.id=="sh")S[cur].s=1;else if(b.id=="pv")cur--;else if(b.id=="nx")cur++;
+ render();if(b.id=="sh")document.querySelector(".hl")?.scrollIntoView({behavior:"smooth",block:"center"})});
+const fmt=s=>String(s/60|0).padStart(2,"0")+":"+String(s%60).padStart(2,"0");
+$("#st").onclick=()=>{if(!tm)tm=setInterval(()=>{sec++;$("#tm").textContent=fmt(sec)},1000)};
+$("#ps").onclick=()=>{clearInterval(tm);tm=null};
+[[2,5,130,-12],[28,2,100,8],[60,3,140,14],[88,6,110,-10],[93,38,120,12],[1,38,100,-8],[3,72,140,10],[24,82,110,-14],[48,88,130,6],[72,80,110,-9],[88,82,130,15],[53,42,90,-6]]
+ .forEach(([x,y,w,r])=>{const d=document.createElement("div");d.className="dc";d.style.cssText=`left:${x}%;top:${y}%;width:${w}px;transform:rotate(${r}deg)`;d.innerHTML='<svg viewBox="0 0 60 30"><use href="#uj"/></svg>';$("#bg").appendChild(d)});
+render();
+</script></body></html>
